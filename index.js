@@ -34,6 +34,7 @@ const createVideo = () => {
         }
     }, player)
 
+    //// Print number of nodes ////
     setInterval(() => {
         ipfs.swarm.peers((_err,info)=>{ number = info.length })
         count.innerHTML = number
