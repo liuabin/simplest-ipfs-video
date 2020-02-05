@@ -1,21 +1,22 @@
 // index.js
 var vs
+var stream // Use less
 const player = document.getElementById('video')
 var number = 0
 const count = document.getElementById('number')
 const ipfs = new Ipfs({
-    repo: 'ipfs',
+  repo: 'ipfs',
     config: {
         Addresses: {
             Swarm: [
                 '/dns4/ws-star.discovery.libp2p.io/tcp/443/wss/p2p-websocket-star/'
             ]
         }
-    }
+    }  
 })
 
 const createVideo = () => {
-    let stream
+    // let stream
     vs = new videostream({
         createReadStream: function createReadStream(opts) {
             // const start = opts.start

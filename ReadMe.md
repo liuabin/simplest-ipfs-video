@@ -9,5 +9,6 @@
 
 ## Note
 
-* `IPFS` & `videostream` class is imported by `<script>` from [jsdeliver](https://cdn.jsdelivr.net). No Node.js here.
+* `IPFS` & `videostream` class is imported by `<script>` from [jsdeliver](https://cdn.jsdelivr.net).
+* No Node.js here.
 * Be aware about the version.
